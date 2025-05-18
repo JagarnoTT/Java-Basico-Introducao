@@ -1,10 +1,22 @@
 package fundamentoJava;
+import java.util.Scanner;
 
 public class conversãoFxC {
 	public static void main(String [] args) {
-		double F = 68.0;
-		double C = (F - 32) / 1.8;
+		Scanner entrada = new Scanner(System.in);
 		
-		System.out.println("O valor de "+ F+"º Fahrenheit convertido em Celsius é: "+C+"°C");
+		
+		System.out.println("Qual seu nome? ");
+		String Nome = entrada.nextLine();
+		
+		System.out.println("Quanto Graus Fahrenheit você deseja converter? ");
+		Double Fahrenheit = entrada.nextDouble();
+		entrada.nextLine();
+		
+		Double Celsius = (Fahrenheit - 32) / 1.8;
+		
+		System.out.println("Seu nome é "+Nome+" e você converteu "+Fahrenheit+"°F em "+ String.format("%.2f",Celsius)+"°C");
+		
+		entrada.close();
 	}
 }
