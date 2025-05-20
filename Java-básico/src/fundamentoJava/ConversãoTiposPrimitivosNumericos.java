@@ -11,7 +11,7 @@ public class ConversãoTiposPrimitivosNumericos {
 		byte d = (byte) c;
 		System.out.println(d);
 		
-		double e = 5.9;
+		double e = 5.9; // O propósito da atividade é transformar um valor com pont flutuante em um valor inteiro truncando ele, arredondando ele sempre para a primeira casa decimal;
 		int f = (int) e;
 		System.out.println(f);
 	}
