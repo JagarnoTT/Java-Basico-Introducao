@@ -21,17 +21,14 @@ public class DesafioBoolean {
 		
 		boolean Dia1 = R1.equalsIgnoreCase("SIM");
 		boolean Dia2 = R2.equalsIgnoreCase("SIM");
-		boolean Não = R1.equalsIgnoreCase("NÃO");
-		boolean NÃO = R2.equalsIgnoreCase("NÃO");
 		
 		if(Dia1 && Dia2) {
 			System.out.println("Ótimo podemos comprar a TV de 50' e tomar sorvete");
 		}
-		
 		else if(Dia1 ^ Dia2) {
 			System.out.println("Podemos comprar a TV de 32' e tomar sorvete mesmo assim");
 		}
-		else if (!Não && !NÃO) {
+		else if (!Dia1 && !Dia2) {
 			System.out.println("Como não trabalhou nenhum dia, não teremos nem sorvete e nem TV, vamos ficar com fome");
 		}
 		else {
